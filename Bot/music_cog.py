@@ -21,6 +21,7 @@ class music_cog(commands.Cog):
 
         self.vc = None
 
+    #Funcão de busca do programa
     def search(self, item):
 
         with YoutubeDL(self.YDL_OPTIONS) as ydl:

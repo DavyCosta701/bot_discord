@@ -12,6 +12,7 @@ if __name__ == "__main__":
     bot.remove_command("help")
     bot.remove_command("play")
 
+    #Função auxiliar da programação assonance
     async def on_ready():
         bot.add_cog(help_cog(bot))
         bot.add_cog(music_cog(bot))

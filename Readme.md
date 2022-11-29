@@ -1,1 +1,1 @@
-Bot de música do discord made by Davyc
+Bot de música do discord made by Davyc 

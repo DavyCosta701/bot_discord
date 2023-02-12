@@ -18,4 +18,4 @@ if __name__ == "__main__":
         bot.add_cog(music_cog(bot))
     asyncio.run(on_ready())
 
-    bot.run("MTA0MzYyMzI4NTY1MDM2NjU1NA.GvMG1t.Jt-vklO_AYJjsJRF6WDEn5XHgq0FBqEMikSi30")
+    bot.run("SFASDASFSA")

@@ -10,7 +10,7 @@ class help_cog(commands.Cog):
         self.help_message = """
         
         Comandos
-        !help - Mostra ajuda pra quem for burro
+        !help - Mostra ajuda 
         !p <Musica> - Toca a música atual. Aliases = play
         !pause - Pausa o player, volta a tocar se o player estiver pausado
         !re - Volta a tocar a música

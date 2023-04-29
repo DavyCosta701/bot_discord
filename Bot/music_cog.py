@@ -70,7 +70,7 @@ class music_cog(commands.Cog):
         voice_channel = ctx.author.voice.channel
 
         if voice_channel is None:
-            await ctx.send("É inácreditável o quão burro você pode ser. Conecta em um canal de voz ai.")
+            await ctx.send("Conecte-se em um canal de voz.")
 
         else:
             song = self.search(query)
@@ -86,7 +86,7 @@ class music_cog(commands.Cog):
         self.bot.add_command(self.play)
 
 
-    @commands.command(name="pause", help="Pausa o som tocado, obviamente.")
+    @commands.command(name="pause", help="Pausa o som tocado.")
     async def pause(self, ctx, *args):
         if self.isplaying:
             self.isplaying = False
@@ -123,9 +123,9 @@ class music_cog(commands.Cog):
             await ctx.send(retval)
 
         else:
-            await ctx.send("N tem nem som na queue e tu tá digitando esse comando. Mas é mt burro msm kkkkkkkkkkkkkk")
+            await ctx.send("Sem música na queie")
 
-    @commands.command(name="blackrose", aliases=["br"], help="Limpa a queue e manda o bot pastar (até chamar ele dnv)")
+    @commands.command(name="blackrose", aliases=["br"], help="Limpa a queue e desconecta o bot (até chamar ele dnv)")
     async def blackrose(self, ctx, *args):
 
         if self.vc is not None and self.isplaying:
@@ -133,7 +133,7 @@ class music_cog(commands.Cog):
         self.music_queue = []
         await ctx.send("Queue Limpa")
 
-    @commands.command(name="leave", aliases=["disconnect", "l", "disc"], help="Manda o bot pastar")
+    @commands.command(name="leave", aliases=["disconnect", "l", "disc"], help="Desconecta o bot")
     async def leave(self, ctx):
         self.isplaying = False
         self.ispausing = False

@@ -32,7 +32,7 @@ class help_cog(commands.Cog):
         for text_channel in self.text_channel_text:
             await text_channel.send(msg)
 
-    @commands.command(name= "help", help= "Ajuda para burros")
+    @commands.command(name= "help", help= "Ajuda")
     async def help(self, ctx):
         await ctx.send(self.help_message)
 
